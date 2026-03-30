@@ -8,10 +8,10 @@ function Navbar() {
           </a>
         </li>
         <li className="ticker-container">
-          <div className="ticker-text">
+          <marquee className="moving-text">
             🚀 Latest Announcement: UOSAI is launching new features next week!
             Stay tuned...
-          </div>
+          </marquee>
         </li>
         <li className="nav-btn">
           <a href="#" className="nav-btn_top">

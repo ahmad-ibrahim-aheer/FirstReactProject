@@ -6,10 +6,23 @@ function Login() {
       <div className="login-body">
         <div className="left-side">
           <h2>Login</h2>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">
+              Name
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+              size={100}
+              style={{
+                maxWidth: "10px",
+              }}
+            />
+          </div>
 
-          <input className="input" placeholder="Enter Your Name" />
-
-          <input type="password" class="input" placeholder="Password" />
+          <input type="password" className="input" placeholder="Password" />
 
           <button className="btn">Login</button>
           <a className="Signup">
