@@ -6,6 +6,7 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Navbar from "./components/inc/Navbar";
+import CarouselFadeExample from "./components/inc/Slider";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
+      <CarouselFadeExample/>
     </Router>
   );
 }
