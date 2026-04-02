@@ -9,9 +9,20 @@
 }
 
 .underline {
-    height: 04px;
+    height: 4px;
     width: 4rem;
     background-color: #f76c2f;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.underline:hover {
+    width: 6rem;
+    background-color: #ff944d;
+}
+
+.bg-c-light {
+    background-color: #f2f2f2f2;
 }
