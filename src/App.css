@@ -1,3 +1,8 @@
+p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
 .section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -23,6 +28,34 @@
     background-color: #ff944d;
 }
 
-.bg-c-light {
-    background-color: #f2f2f2f2;
+.card {
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.btn {
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.link-hover:hover {
+    color: #60a5fa !important;
+    text-decoration: underline;
+}
+
+.links {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.links:hover {
+    color: gray;
 }
