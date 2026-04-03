@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Contact() {
   return (
     <div>
@@ -8,7 +10,12 @@ function Contact() {
               <h4>Contact Us</h4>
             </div>
             <div className="col-md-8 my-auto">
-              <h6 className="float-end">Home / Contact Us</h6>
+              <Link to="/about" className="btn float-end">
+                <strong>About Us</strong>
+              </Link>
+              <Link to="/" className="btn float-end">
+                <strong>Home</strong>
+              </Link>
             </div>
           </div>
         </div>

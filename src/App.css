@@ -38,11 +38,11 @@ p {
     cursor: pointer;
 }
 
-.btn {
+.btn-warning {
     transition: 0.2s;
 }
 
-.btn:hover {
+.btn-warning:hover {
     transform: translateY(-5px);
 }
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import VMC from "../inc/Vmc";
 
 function Aboutus() {
@@ -10,7 +11,12 @@ function Aboutus() {
               <h4>About Us</h4>
             </div>
             <div className="col-md-8 my-auto">
-              <h6 className="float-end">Home / About Us</h6>
+              <Link to="/contact" className="btn float-end">
+                <strong>Contact Us</strong>
+              </Link>
+              <Link to="/" className="btn float-end">
+                <strong>Home</strong>
+              </Link>
             </div>
           </div>
         </div>
