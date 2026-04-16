@@ -3,13 +3,13 @@ import { FaPhone, FaEnvelope } from "react-icons/fa"; // phone & email icons
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light pt-5 pb-3">
+    <footer className="site-footer pt-5 pb-3">
       <div className="container">
         <div className="row text-center text-md-start">
 
           <div className="col-md-4 mb-4">
             <h5 className="fw-semibold mb-2">Company Information</h5>
-            <div className="mb-3" style={{ height: "2px", width: "60%", backgroundColor: "#6b7280" }}></div>
+            <div className="footer-divider mb-3"></div>
             <p className="links small">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, nisl at volutpat facilisis.
             </p>
@@ -18,7 +18,7 @@ function Footer() {
           {/* Column 2 */}
           <div className="col-md-4 mb-4">
             <h5 className="fw-semibold mb-2">Quick Links</h5>
-            <div className="mb-3" style={{ height: "2px", width: "60%", backgroundColor: "#6b7280" }}></div>
+            <div className="footer-divider mb-3"></div>
             <ul className="list-unstyled">
               <li className="mb-2"><Link className="links" to="/">Home</Link></li>
               <li className="mb-2"><Link className="links" to="/about">About</Link></li>
@@ -29,7 +29,7 @@ function Footer() {
 
           <div className="col-md-4 mb-4">
             <h5 className="fw-semibold mb-2">Contact Information</h5>
-            <div className="mb-3" style={{ height: "2px", width: "60%", backgroundColor: "#6b7280" }}></div>
+            <div className="footer-divider mb-3"></div>
             <p className="links small mb-1">
               #83, Kirana View Sargodha, Punjab
             </p>
@@ -46,7 +46,7 @@ function Footer() {
 
         </div>
 
-        <div className="text-center mt-3 pt-3 border-top border-secondary small text-secondary">
+        <div className="footer-bottom text-center mt-3 pt-3 small">
           &copy; {new Date().getFullYear()} Your Company. All rights reserved.
         </div>
 

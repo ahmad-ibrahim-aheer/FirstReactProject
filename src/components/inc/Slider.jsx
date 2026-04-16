@@ -1,15 +1,15 @@
 import Carousel from "react-bootstrap/Carousel";
 import img1 from "../images/img3.jpg";
 
-function DarkVariantExample() {
+function DarkVariantExample({ theme }) {
   return (
     <>
       {" "}
       {/* <div className="container"> */}
-        <Carousel data-bs-theme="dark">
+        <Carousel className="hero-carousel" data-bs-theme={theme}>
           <Carousel.Item>
             <img className="d-block w-25" src={img1} alt="First slide" />
-            <Carousel.Caption>
+            <Carousel.Caption className="hero-caption">
               <h5>Unleashing the light within.</h5>
               <p>
                 An epic display of ultimate power. Breaking through the shadows.
@@ -22,7 +22,7 @@ function DarkVariantExample() {
               src={img1}
               alt="Second slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="hero-caption">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
@@ -33,7 +33,7 @@ function DarkVariantExample() {
               src={img1}
               alt="Third slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="hero-caption">
               <h5>Third slide label</h5>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.

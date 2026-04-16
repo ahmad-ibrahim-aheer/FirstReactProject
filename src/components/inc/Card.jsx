@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Card() {
   return (
     <>
-      <section className="section border-top">
+      <section className="section section-divider">
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-4 text-center">
@@ -15,7 +15,7 @@ function Card() {
             <div className="col-md-4">
               <div className="card shadow">
                 <img
-                  className="w-100 border-bottom"
+                  className="w-100 service-card-image"
                   src={image}
                   alt="Services"
                 />
@@ -37,7 +37,7 @@ function Card() {
             <div className="col-md-4">
               <div className="card shadow">
                 <img
-                  className="w-100 border-bottom"
+                  className="w-100 service-card-image"
                   src={image}
                   alt="Services"
                 />
@@ -58,7 +58,7 @@ function Card() {
             <div className="col-md-4">
               <div className="card shadow">
                 <img
-                  className="w-100 border-bottom"
+                  className="w-100 service-card-image"
                   src={image}
                   alt="Services"
                 />

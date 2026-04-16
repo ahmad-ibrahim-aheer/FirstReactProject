@@ -1,23 +1,63 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-// import { Link } from "react-router";
+import { Link } from "react-router-dom";
+import { FaDesktop, FaMoon, FaSun } from "react-icons/fa";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-function NavScrollExample() {
+const themeOptions = [
+  { id: "light", label: "Light mode", icon: FaSun },
+  { id: "dark", label: "Dark mode", icon: FaMoon },
+  { id: "system", label: "System theme", icon: FaDesktop },
+];
+
+function NavScrollExample({ theme, themePreference, setThemePreference }) {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar
+        expand="lg"
+        className="app-navbar border-bottom"
+        data-bs-theme={theme}
+      >
         <Container>
-          <Navbar.Brand href="/">Navbar</Navbar.Brand>
-          <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/About">About us</Nav.Link>
-            <Nav.Link href="/Contact">Contact us</Nav.Link>
-          </Nav>
+          <Navbar.Brand as={Link} to="/">
+            WIC
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="main-navbar-nav" />
+          <Navbar.Collapse id="main-navbar-nav">
+            <Nav className="ms-auto align-items-lg-center gap-lg-2">
+              <Nav.Link as={Link} to="/">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about">
+                About us
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Contact us
+              </Nav.Link>
+              <div
+                className="theme-toggle-group"
+                role="group"
+                aria-label="Theme selection"
+              >
+                {themeOptions.map(({ id, label, icon: Icon }) => (
+                  <button
+                    key={id}
+                    type="button"
+                    className={`theme-toggle-btn ${
+                      themePreference === id ? "is-active" : ""
+                    }`}
+                    onClick={() => setThemePreference(id)}
+                    aria-label={label}
+                    title={label}
+                    aria-pressed={themePreference === id}
+                  >
+                    <Icon aria-hidden="true" />
+                  </button>
+                ))}
+              </div>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

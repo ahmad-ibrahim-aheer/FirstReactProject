@@ -1,12 +1,11 @@
-import { Button } from "bootstrap/dist/js/bootstrap.bundle.min";
 import Slider from "../inc/Slider";
 import { Link } from "react-router-dom";
 import Card from "../inc/Card";
 
-function Home() {
+function Home({ theme }) {
   return (
     <div>
-      <Slider />
+      <Slider theme={theme} />
       <section className="section">
         <div className="container">
           <div className="row">

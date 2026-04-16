@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <div>
-      <section className="py-4 bg-info">
+      <section className="page-banner py-4">
         <div className="container">
           <div className="row">
             <div className="col-md-4 my-auto">
               <h4>Contact Us</h4>
             </div>
             <div className="col-md-8 my-auto">
-              <Link to="/about" className="btn float-end">
+              <Link to="/about" className="btn page-banner-link float-end">
                 <strong>About Us</strong>
               </Link>
-              <Link to="/" className="btn float-end">
+              <Link to="/" className="btn page-banner-link float-end">
                 <strong>Home</strong>
               </Link>
             </div>
@@ -23,17 +23,18 @@ function Contact() {
 
       <section className="section">
         <div className="container">
-          <div className="card shadow">
+          <div className="card shadow surface-card">
             <div className="card-body">
               <div className="row">
                 <div className="col-md-6">
                   <h6>Contact Form</h6>
                   <hr />
                   <div className="form-group">
-                    <label className="mb-1" for="">
+                    <label className="mb-1" htmlFor="fullName">
                       Full Name
                     </label>
                     <input
+                      id="fullName"
                       type="text"
                       className="form-control"
                       placeholder="Enter Your Name"
@@ -41,10 +42,11 @@ function Contact() {
                   </div>
 
                   <div className="form-group">
-                    <label className="mb-1" for="">
+                    <label className="mb-1" htmlFor="phoneNumber">
                       Phone Number
                     </label>
                     <input
+                      id="phoneNumber"
                       type="text"
                       className="form-control"
                       placeholder="Enter Your Phone Number"
@@ -52,10 +54,11 @@ function Contact() {
                   </div>
 
                   <div className="form-group">
-                    <label className="mb-1" for="">
+                    <label className="mb-1" htmlFor="email">
                       Email
                     </label>
                     <input
+                      id="email"
                       type="tel"
                       className="form-control"
                       placeholder="example@gmail.com"
@@ -63,12 +66,11 @@ function Contact() {
                   </div>
 
                   <div className="form-group">
-                    <label className="mb-1" for="">
+                    <label className="mb-1" htmlFor="message">
                       Message
                     </label>
                     <textarea
-                      name=""
-                      id=""
+                      id="message"
                       rows="3"
                       className="form-control"
                       placeholder="Enter your message"
@@ -76,12 +78,12 @@ function Contact() {
                   </div>
 
                   <div className="form-group py-3">
-                    <button type="button" className="btn btn-primary w-100">
+                    <button type="button" className="btn btn-warning w-100">
                       Submit
                     </button>
                   </div>
                 </div>
-                <div className="col-md-6 border-start">
+                <div className="col-md-6 contact-sidebar">
                   <h5 className="main-heading">Address Information</h5>
                   <div className="underline"></div>
                   <p>

@@ -4,17 +4,17 @@ import VMC from "../inc/Vmc";
 function Aboutus() {
   return (
     <div>
-      <section className="py-4 bg-info">
+      <section className="page-banner py-4">
         <div className="container">
           <div className="row">
             <div className="col-md-4 my-auto">
               <h4>About Us</h4>
             </div>
             <div className="col-md-8 my-auto">
-              <Link to="/contact" className="btn float-end">
+              <Link to="/contact" className="btn page-banner-link float-end">
                 <strong>Contact Us</strong>
               </Link>
-              <Link to="/" className="btn float-end">
+              <Link to="/" className="btn page-banner-link float-end">
                 <strong>Home</strong>
               </Link>
             </div>
@@ -22,7 +22,7 @@ function Aboutus() {
         </div>
       </section>
 
-      <section className="section bg-light">
+      <section className="section surface-muted">
         <div className="container">
           <h5 className="main-heading">Our Company</h5>
           <div className="underline"></div>
